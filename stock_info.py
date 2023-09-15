@@ -277,10 +277,15 @@ class StockCodeInfo(object):
 
     def __init__(self):
 
+        print("loading stock_sh...")
         self.stock_sh = stock_info_sh_name_code(symbol="主板A股")
+        print("loading stock_sz...")
         self.stock_sz = stock_info_sz_name_code(symbol="A股列表")
+        print("loading stock_kcb...")
         self.stock_kcb = stock_info_sh_name_code(symbol="科创板")
+        print("loading stock_bse...")
         self.stock_bse = stock_info_bj_name_code()
+        print("finish...")
 
     def intergrate(self):
 
